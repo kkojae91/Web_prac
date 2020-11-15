@@ -83,3 +83,18 @@ slideButtonPrev.addEventListener('click', () => {
   }
   currentSlide = --currentIndex;
 });
+
+// button click시 해당 위치로 scroll
+const headerButton = document.querySelector('.header-button');
+
+headerButton.addEventListener('click', (event) => {
+  event.preventDefault();
+  document.querySelector('.add-clothing-upload-title').scrollIntoView(true);
+});
+
+const addClothingBoxButton = document.querySelector('.add-clothing-box-button');
+
+addClothingBoxButton.addEventListener('click', (event) => {
+  event.preventDefault();
+  document.querySelector('.recommand-section-title').scrollIntoView(true);
+});
