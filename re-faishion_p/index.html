@@ -41,27 +41,209 @@
     <section class="add-clothing">
       <div class="container">
         <div class="row">
-          <div class="col-12">
-            <h1 class="add-clothing-title">내 옷 추가하기</h1>
-            <div class="file-box">
-              <input
-                type="text"
-                class="cloth-upload-name"
-                value="파일선택"
-                disabled="disabled"
-              />
-              <label for="cloth-input-file">업로드</label>
-              <input
-                id="cloth-input-file"
-                class="cloth-input-file-hidden"
-                type="file"
-                accept=".jpg"
-              />
+          <div class="col-12 col-md-5">
+            <div class="add-clothing-upload">
+              <h1 class="add-clothing-upload-title">내 옷 추가하기</h1>
+              <div class="file-box">
+                <input
+                  type="text"
+                  class="cloth-upload-name"
+                  value="파일선택"
+                  disabled="disabled"
+                />
+                <label for="cloth-input-file">업로드</label>
+                <input
+                  id="cloth-input-file"
+                  class="cloth-input-file-hidden"
+                  type="file"
+                  accept=".jpg"
+                />
+              </div>
+              <span class="add-clothing-upload-span"
+                >jpg파일을 업로드 해주세요</span
+              >
+              <button
+                class="add-clothing-upload-button fill-button"
+                type="button"
+              >
+                옷 추가하기
+              </button>
             </div>
-            <span class="add-clothing-span">jpg파일을 업로드 해주세요</span>
-            <button class="add-clothing-button fill-button" type="button">
-              옷 추가하기
-            </button>
+          </div>
+          <div class="col-12 col-md-7">
+            <div class="add-clothing-box">
+              <h1 class="add-clothing-box-title">옷장</h1>
+              <!-- 장고 연결해서 마무리 해야함. -->
+              <div class="slide-wrap">
+                <div class="slide-box">
+                  <dl class="add-clothing-box-content slide-list">
+                    <div class="add-clothing-box-content-item slide-content">
+                      <div class="add-clothing-box-content-image">
+                        <dt class="sr-only">옷 사진</dt>
+                        <dd>
+                          <img src="./mantoman.jpg" alt="" />
+                        </dd>
+                      </div>
+                      <div class="add-clothing-box-content-buttons">
+                        <div>
+                          <dt class="sr-only">코디 추천하기</dt>
+                          <dd>
+                            <form action="">
+                              <button
+                                class="add-clothing-box-button fill-button"
+                                type="button"
+                              >
+                                코디 추천
+                              </button>
+                            </form>
+                          </dd>
+                        </div>
+                        <div>
+                          <dt class="sr-only">삭제하기</dt>
+                          <dd>
+                            <form action="">
+                              <button
+                                class="delete-button fill-button"
+                                type="button"
+                              >
+                                삭제
+                              </button>
+                            </form>
+                          </dd>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="add-clothing-box-content-item slide-content">
+                      <div class="add-clothing-box-content-image">
+                        <dt class="sr-only">옷 사진</dt>
+                        <dd>
+                          <img src="./hoodie1.jpg" alt="" />
+                        </dd>
+                      </div>
+                      <div class="add-clothing-box-content-buttons">
+                        <div>
+                          <dt class="sr-only">코디 추천하기</dt>
+                          <dd>
+                            <form action="">
+                              <button
+                                class="add-clothing-box-button fill-button"
+                                type="button"
+                              >
+                                코디 추천
+                              </button>
+                            </form>
+                          </dd>
+                        </div>
+                        <div>
+                          <dt class="sr-only">삭제하기</dt>
+                          <dd>
+                            <form action="">
+                              <button
+                                class="delete-button fill-button"
+                                type="button"
+                              >
+                                삭제
+                              </button>
+                            </form>
+                          </dd>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="add-clothing-box-content-item slide-content">
+                      <div class="add-clothing-box-content-image">
+                        <dt class="sr-only">옷 사진</dt>
+                        <dd>
+                          <img src="./input_shirts3.jpg" alt="" />
+                        </dd>
+                      </div>
+                      <div class="add-clothing-box-content-buttons">
+                        <div>
+                          <dt class="sr-only">코디 추천하기</dt>
+                          <dd>
+                            <form action="">
+                              <button
+                                class="add-clothing-box-button fill-button"
+                                type="button"
+                              >
+                                코디 추천
+                              </button>
+                            </form>
+                          </dd>
+                        </div>
+                        <div>
+                          <dt class="sr-only">삭제하기</dt>
+                          <dd>
+                            <form action="">
+                              <button
+                                class="delete-button fill-button"
+                                type="button"
+                              >
+                                삭제
+                              </button>
+                            </form>
+                          </dd>
+                        </div>
+                      </div>
+                    </div>
+                  </dl>
+                </div>
+                <div class="slide-button-box">
+                  <button type="button" class="slide-button-prev">
+                    <img
+                      id="arrow-image-left"
+                      class="arrow-image"
+                      src="./left-solid.png"
+                      alt=""
+                    />
+                  </button>
+                  <button type="button" class="slide-button-next">
+                    <img
+                      id="arrow-image-right"
+                      class="arrow-image"
+                      src="./right-solid.png"
+                      alt=""
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="recommand-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h1 class="recommand-section-title">
+              fAIshion_P님의
+              <br />
+              의류와 잘 어울리는 코디입니다.
+            </h1>
+            <span class="recommand-section-span"
+              >해당 상품을 누르시면 상세페이지로 이동합니다.</span
+            >
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-4">
+            <a href="#" class="recommand-card">
+              <img src="./hoodie1.jpg" alt="" />
+              <strong>상품 보러 가기</strong>
+            </a>
+          </div>
+          <div class="col-12 col-md-4">
+            <a href="#" class="recommand-card">
+              <img src="./mantoman.jpg" alt="" />
+              <strong>상품 보러 가기</strong>
+            </a>
+          </div>
+          <div class="col-12 col-md-4">
+            <a href="#" class="recommand-card">
+              <img src="./input_shirts3.jpg" alt="" />
+              <strong>상품 보러 가기</strong>
+            </a>
           </div>
         </div>
       </div>
